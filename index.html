@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game(2048)</title>
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+	<script src="gamer.js" type="text/javascript"></script>
+    <script src="jquery-1.9.1.min.js"></script>
+	<style>
+	 .tile {
+        height: 100px;
+        width:100px;
+        flex: 0 0 100px; 
+    border-radius: 3px;
+    background: #eee4da;
+    text-align: center;
+    font-weight: bold;
+    
+ 
+    font-size: 50px;
+    line-height:2;
+    margin:5px 5px;
+}
+body{
+    padding-top:50px;
+}
+
+	</style>
+
+</head>
+<body>
+<div class="row">
+	<div class="col s2 waves effect btn offset-s3" id="reset">Restart</div>
+	<div class="col s2 waves effect btn offset-s3"id="score">Score:</div>
+</div>
+
+<main id="game">
+            <div class="tile tile_0" id="tile_00"></div>
+            <div class="tile tile_0" id="tile_01"></div>
+            <div class="tile tile_0" id="tile_02"></div>
+            <div class="tile tile_0" id="tile_03"></div>
+            <div class="tile tile_0" id="tile_10"></div>
+            <div class="tile tile_0" id="tile_11"></div>
+            <div class="tile tile_0" id="tile_12"></div>
+            <div class="tile tile_0" id="tile_13"></div>
+            <div class="tile tile_0" id="tile_20"></div>
+            <div class="tile tile_0" id="tile_21"></div>
+            <div class="tile tile_0" id="tile_22"></div>
+            <div class="tile tile_0" id="tile_23"></div>
+            <div class="tile tile_0" id="tile_30"></div>
+            <div class="tile tile_0" id="tile_31"></div>
+            <div class="tile tile_0" id="tile_32"></div>
+            <div class="tile tile_0" id="tile_33"></div>
+           <div id="gameover"><div>GAME OVER!!</div>
+           <div class="reset" id="resetag">RESET</div></div>
+           <div id="won"><div>YOU WON!!</div>
+           <div class="set">
+           <div class="reset" id="resetag1">RESET</div><div class="cont" id="continue">Continue</div></div></div>
+
+        </main>
+<script >
+     function onBodyLoad(){
+     	gamer.init();
+     }
+	window.addEventListener('load',onBodyLoad);
+</script>
+</body>
+</html>

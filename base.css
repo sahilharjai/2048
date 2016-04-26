@@ -1,0 +1,139 @@
+
+*{
+	padding:0;
+	margin:0;
+}
+          #game {
+            width: 500px;
+            height:500px;
+            
+            
+           display: flex;
+           flex-wrap:wrap;
+           justify-content: space-between;
+           margin : 0 auto;
+           padding:5px 8px;
+            border-radius: 5px;
+           background-color: #776e65;;
+    }
+    
+div.tile_0{
+  background-color: rgba(238, 228, 218, 0.2);
+  color:rgba(238, 228, 218, 0);
+  
+}
+div.tile_2{
+  background-color: #eee4da;
+  color:black;
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+}
+div.tile_4{
+  background-color: #ede0c8;
+  color:black;
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+}
+
+div.tile_8{
+  background-color:#f2b179;
+  color:#f9f6f2;
+
+}
+div.tile_16{
+  background-color:#f59563;
+  color:#f9f6f2;
+
+}
+div.tile_32
+{
+   color: #f9f6f2;
+    background: #f67c5f;
+}
+div.tile_64{
+  color: #f9f6f2;
+    background: #f65e3b;
+}
+div.tile_128{
+   color: #f9f6f2;
+    background: #edcf72;
+    font-size:45px;
+}
+div.tile_256{
+   color: #f9f6f2;
+    background: #ffbf00;
+    font-size:45px;
+    line-height: 2.25;
+}
+div.tile_512{
+  color:#f9f6f2;;
+  background-color: #ffff00;
+  font-size:45px;
+    line-height: 2.25;
+
+}
+div.tile_1024{
+  color:#f9f6f2;;
+  background-color: #007fff;
+  font-size:35px;
+    line-height: 3;
+
+}
+div.tile_2048{
+  color:#f9f6f2;;
+  background-color:#0040ff;
+  font-size:35px;
+    line-height: 3;
+
+}
+#gameover{
+  width:400px;
+  height:250px;
+  padding-top-top:30px; 
+  position:absolute;
+  top:150px;
+  left:450px;
+  background-color: rgba(100,100,100,0.95);
+  color:white;
+  font-size:60px;
+  padding:10px;
+  display: none;
+}
+div.reset{
+  background: #776e65;
+  margin:0 auto;
+  margin-top: 60px;
+  height:60px;
+  width:100px;
+  text-align:center;
+  font-size:15px;
+  line-height:3.5;
+  border:3px solid black;
+  border-radius:10px;
+}
+#won{
+  width:400px;
+  height:250px;
+  padding-top-top:30px; 
+  position:absolute;
+  top:150px;
+  left:450px;
+  background-color: rgba(100,100,100,0.95);
+  color:white;
+  font-size:60px;
+  padding:10px;
+  display: none;
+}
+div.set{
+  display: flex;
+}
+div.cont{
+   background: #776e65;
+  margin:0 auto;
+  margin-top: 60px;
+  height:60px;
+  width:100px;
+  text-align:center;
+  font-size:15px;
+  line-height:3.5;
+  border:3px solid black;
+  border-radius:10px;
+}
