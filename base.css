@@ -1,27 +1,32 @@
 
 *{
 	padding:0;
-	margin:0;
-}
-          #game {
-            width: 500px;
-            height:500px;
-            
-            
-           display: flex;
-           flex-wrap:wrap;
-           justify-content: space-between;
-           margin : 0 auto;
-           padding:5px 8px;
-            border-radius: 5px;
-           background-color: #776e65;;
-    }
-    
+	margin:0;}
+body
+{
+  width: 100%;
+  height:100vh;
+  padding-top:10px; 
+  background:url(./amam.png) white;}
+.game{
+  width: 470px;
+  height:470px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin : 0 auto;
+  padding:5px 8px;
+  border-radius: 5px;
+  background-color: #776e65;
+}  
+.btn
+{
+  min-width: 125px;
+} 
 div.tile_0{
   background-color: rgba(238, 228, 218, 0.2);
   color:rgba(238, 228, 218, 0);
-  
-}
+   }
 div.tile_2{
   background-color: #eee4da;
   color:black;
@@ -32,16 +37,13 @@ div.tile_4{
   color:black;
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
 }
-
 div.tile_8{
   background-color:#f2b179;
   color:#f9f6f2;
-
 }
 div.tile_16{
   background-color:#f59563;
   color:#f9f6f2;
-
 }
 div.tile_32
 {
@@ -50,90 +52,144 @@ div.tile_32
 }
 div.tile_64{
   color: #f9f6f2;
-    background: #f65e3b;
+  background: #f65e3b;
 }
 div.tile_128{
-   color: #f9f6f2;
-    background: #edcf72;
-    font-size:45px;
+  color: #f9f6f2;
+  background: #edcf72;
+  font-size:45px;
 }
 div.tile_256{
-   color: #f9f6f2;
-    background: #ffbf00;
-    font-size:45px;
-    line-height: 2.25;
+  color: #f9f6f2;
+  background: #ffbf00;
+  font-size:45px;
+  line-height: 2.25;
 }
 div.tile_512{
   color:#f9f6f2;;
   background-color: #ffff00;
   font-size:45px;
-    line-height: 2.25;
+  line-height: 2.25;
 
 }
 div.tile_1024{
   color:#f9f6f2;;
   background-color: #007fff;
   font-size:35px;
-    line-height: 3;
+  line-height: 3;
 
 }
 div.tile_2048{
   color:#f9f6f2;;
   background-color:#0040ff;
   font-size:35px;
-    line-height: 3;
+  line-height: 3;
 
 }
-#gameover{
-  width:400px;
-  height:250px;
-  padding-top-top:30px; 
+div.gameover{
+  height:470px;
+  width:470px;
   position:absolute;
-  top:150px;
-  left:450px;
+  text-align: center;
+  margin:auto;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:-1%; 
+  padding:5px 8px;
+  border-radius: 5px;
   background-color: rgba(100,100,100,0.95);
   color:white;
   font-size:60px;
-  padding:10px;
   display: none;
 }
-div.reset{
-  background: #776e65;
-  margin:0 auto;
-  margin-top: 60px;
-  height:60px;
-  width:100px;
-  text-align:center;
-  font-size:15px;
-  line-height:3.5;
-  border:3px solid black;
-  border-radius:10px;
+
+.tile {
+    height: 100px;
+    width:100px;
+    flex: 0 0 100px; 
+    border-radius: 3px;
+    background: #eee4da;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    line-height:2;
+    margin:5px 5px;
+}
+div.reset
+{
+  font-size:20px;
 }
 #won{
-  width:400px;
-  height:250px;
-  padding-top-top:30px; 
+  
+  height:470px;
+  width:470px;
   position:absolute;
-  top:150px;
-  left:450px;
+  text-align: center;
+  margin:auto;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:-1%; 
+  padding:5px 8px;
+  border-radius: 5px;
   background-color: rgba(100,100,100,0.95);
   color:white;
   font-size:60px;
-  padding:10px;
-  display: none;
+  display:none;
 }
-div.set{
-  display: flex;
-}
-div.cont{
-   background: #776e65;
-  margin:0 auto;
-  margin-top: 60px;
-  height:60px;
-  width:100px;
-  text-align:center;
+p.sd
+  {
   font-size:15px;
-  line-height:3.5;
-  border:3px solid black;
-  border-radius:10px;
+  }
+@media screen and (max-width: 700px){
+
+.game{          
+  width: 320px;
+  height:320px;
+} 
+div.gameover
+{
+  width: 320px;
+  height:320px;
+  font-size:40px;
+}
+#won{
+  width: 320px;
+  height:320px;
+  font-size:40px; 
+   }
+  .tile
+  {
+    height: 65px;
+    width:65px;
+    flex: 0 0 65px; 
+    font-size: 35px;
+
+  }
+  p.sd
+  {
+  font-size:12px;
+  }
+  div.tile_128
+  {
+    font-size: 35px;
+  }
+  div.tile_256
+  {
+    font-size: 35px;
+  }
+  div.tile_512
+  {
+    font-size: 35px;
+  }
+  div.tile_1024
+  {
+    font-size: 25px;
+  }
+  div.tile_2048
+  {
+    font-size: 25px;
+  }
+
 }
